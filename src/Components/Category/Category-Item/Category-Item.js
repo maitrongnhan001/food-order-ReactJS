@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Category-Item.scss';
 import { Link } from 'react-router-dom';
 
 class CategoryItem extends Component {
