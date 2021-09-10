@@ -8,7 +8,7 @@ class Search extends Component {
             <div>
                 <section className="product-search text-center">
                     <div className="container">
-                        <form action method="POST">
+                        <form action="true" method="POST">
                             <input type="search" name="search" placeholder="Search for Food.." required />
                             <input type="submit" name="submit" defaultValue="Search" className="btn btn-primary" />
                         </form>
