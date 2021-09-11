@@ -1,24 +1,28 @@
 import './App.scss';
-import Category from './Components/Category/Category';
 import Header from './Components/Header/Header';
-import Search from './Components/Search/Search';
-import { BrowserRouter as Router } from "react-router-dom";
-import Product from './Components/Product/Product';
-import Social from './Components/Social/Social';
-import Footer from './Components/Footer/Footer';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './Components/Pages/Home';
+import Categories from './Components/Pages/Categories';
+import Products from './Components/Pages/Products';
+import SearchProduct from './Components/Pages/SearchProduct';
+import LoginPage from './Components/Pages/LoginPage';
+import ContractPage from './Components/Pages/ContractPage';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Router>
         <Header></Header>
-        <Search></Search>
-        <Category></Category>
-        <Product></Product>
-        <Social></Social>
-        <Footer></Footer>
+        <Switch>
+          <Route path='/' exact component={Home}></Route>
+          <Route path='/categories' component={Categories}></Route>
+          <Route path='/products' component={Products}></Route>
+          <Route path='/search' component={SearchProduct}></Route>
+          <Route path='/login' component={LoginPage}></Route>
+          <Route path='/contract' component={ContractPage}></Route>
+        </Switch>
       </Router>
-    </div>
+    </>
   );
 }
 
