@@ -4,6 +4,8 @@ import Header from './Components/Header/Header';
 import Search from './Components/Search/Search';
 import { BrowserRouter as Router } from "react-router-dom";
 import Product from './Components/Product/Product';
+import Social from './Components/Social/Social';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Search></Search>
         <Category></Category>
         <Product></Product>
+        <Social></Social>
+        <Footer></Footer>
       </Router>
     </div>
   );

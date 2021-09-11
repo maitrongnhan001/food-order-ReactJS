@@ -60,13 +60,13 @@ class Product extends Component {
             <section className="product-menu">
                 <div className="container">
                     <h2 className="text-center">Products Menu</h2>
-                    {this.state.sample_data.map((Element) => {
+                    {this.state.sample_data.map((Element, Index) => {
                         return (
-                            <div className="row">
-                                {Element.map((ChildElement, Index) => {
+                            <div className="row" key={Index}>
+                                {Element.map((ChildElement, ChildIndex) => {
                                     return (
                                         <ProductItem
-                                            key={Index}
+                                            key={ChildIndex}
                                             Information={ChildElement}
                                         ></ProductItem>
                                     );
