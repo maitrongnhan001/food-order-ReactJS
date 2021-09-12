@@ -7,6 +7,7 @@ import Products from './Components/Pages/Products';
 import SearchProduct from './Components/Pages/SearchProduct';
 import LoginPage from './Components/Pages/LoginPage';
 import ContractPage from './Components/Pages/ContractPage';
+import OrderPage from './Components/Pages/OrderPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/search' component={SearchProduct}></Route>
           <Route path='/login' component={LoginPage}></Route>
           <Route path='/contract' component={ContractPage}></Route>
+          <Route path='/order' component={OrderPage}></Route>
         </Switch>
       </Router>
     </>
